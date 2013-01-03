@@ -1,0 +1,253 @@
+/* begin Page */
+
+/* Created by Artisteer v3.1.0.45994 */
+
+#art-main {
+   zoom:expression(runtimeStyle.zoom=1,calcWidth=function(o){var p='100%';var min=700;var max=1920;var b=document.body;if(o.w!=b.clientWidth){o.w=b.clientWidth;var w=b.clientWidth/100*parseInt(p);return w < min ? min+'px': w > max ? max+'px':p;}});
+   width:auto;
+}
+#art-page-background-glare{
+   display: none;
+}
+.cleared {
+   width:1px;
+}
+/* Start Box */
+.art-box, .art-box-body {
+   zoom:1;
+}
+/* End Box */
+/* Start Bar */
+.art-bar{
+   zoom:1;
+}
+/* End Bar */
+/* end Page */
+
+/* begin Box, Sheet */
+.art-sheet {
+   background:#F9FAFB;
+   width:expression(calcWidth(this));
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+.art-header {
+   zoom:expression(runtimeStyle.zoom=1,insertBefore(document.createElement('div'),firstChild).className='art-header-jpeg');
+}
+
+.art-header-jpeg
+{
+   position: absolute;
+   z-index:-1;
+   top: 0;
+   width:100%;
+   height: 150px;
+   background-image: url('images/header.jpg');
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+/* end Header */
+
+/* begin Layout */
+.art-content-layout, .art-content-layout-row, .art-layout-cell 
+{
+   display: block;
+   zoom: 1;
+}
+.art-layout-cell
+{
+   position:relative;
+   float: left;
+   clear: right;
+}
+/* end Layout */
+
+/* begin Box, Block, VMenuBlock */
+.art-vmenublock {
+   background:#F9FAFB;
+}
+/* end Box, Block, VMenuBlock */
+
+/* begin BlockHeader, VMenuBlockHeader */
+.art-vmenublockheader {
+   background:#F9FAFB;
+}
+/* end BlockHeader, VMenuBlockHeader */
+
+/* begin Box, Box, VMenuBlockContent */
+.art-vmenublockcontent {
+   background:#F9FAFB;
+}
+
+/* end Box, Box, VMenuBlockContent */
+
+/* begin VMenuItem */
+ul.art-vmenu, ul.art-vmenu ul, ul.art-vmenu li, ul.art-vmenu a
+{
+   position:relative;
+   zoom: 1;
+}
+
+ul.art-vmenu li {
+   z-index:0;
+   margin-top:expression(this.previousSibling==null?'0':'0');
+}
+ul.art-vmenu ul{
+   margin-top:0;
+   padding-bottom: 0;
+}
+
+ul.art-vmenu a 
+{
+   color: #7691AD;
+   background-color:#F9FAFB;
+   padding: 0 10px 0 25px;
+   height: 30px;
+   line-height: 30px;
+}
+
+.art-vmenu a.active 
+{
+   color: #AA3B03;
+   background-color:#F9FAFB;
+}
+
+ul.art-vmenu a:hover
+{
+   color: #22485D;
+   background-color:#FC8D55;
+}
+
+/* end VMenuItem */
+
+/* begin VMenuSubItem */
+ul.art-vmenu ul a {
+   color: #41576C !important;
+}
+ul.art-vmenu li li {
+   padding-top:expression(this.previousSibling==null?'0':'0');
+   margin-top:expression(this.previousSibling==null?'0':'0');
+}
+ 
+ul.art-vmenu ul ul {
+   margin-top:0;
+}
+ul.art-vmenu ul a.active {
+   color: #E14E05 !important;
+}
+ul.art-vmenu ul a:hover {
+   color: #387599 !important;
+}	
+/* end VMenuSubItem */
+
+/* begin Box, Block */
+.art-block {
+   background:#F9FAFB;
+}
+/* end Box, Block */
+
+/* begin BlockHeader */
+.art-blockheader {
+   background:#F9FAFB;
+}
+/* end BlockHeader */
+
+/* begin Box, BlockContent */
+.art-blockcontent {
+   background:#ECF0F4;
+}
+.art-blockcontent-body ul li{
+   height: 1%;
+}
+
+/* end Box, BlockContent */
+
+/* begin Button */
+.art-button-wrapper{
+   zoom: 1;
+}
+.art-button-wrapper .art-button-l, .art-button-wrapper .art-button-r {
+   display: none;
+}
+.art-button-wrapper .art-button {
+   float: left;
+}
+/* end Button */
+
+/* begin Box, Post */
+.art-post {
+   background:#F9FAFB;
+}
+/* end Box, Post */
+
+/* begin PostIcons, PostHeaderIcons */
+.art-postheadericons span{
+   zoom: 1;
+}
+/* end PostIcons, PostHeaderIcons */
+
+/* begin PostBullets */
+.art-post ul li, .art-post ol ul li
+{
+   height: 1%;
+   padding-left: 10px;
+   /* makes "ul li" not to align behind the image if they are in the same line */
+  overflow-x: visible;
+   overflow-y: hidden;
+}
+
+.art-post ul ol li
+{
+   background: none;
+   padding-left: 0;
+   /* overrides overflow for "ul li" and sets the default value */
+  overflow: visible;
+}
+/* end PostBullets */
+
+/* begin PostIcons, PostFooterIcons */
+.art-postfootericons span{
+   zoom: 1;
+}
+/* end PostIcons, PostFooterIcons */
+
+/* begin Footer */
+.art-footer-body{
+   padding-right: 0;
+   zoom:1;
+}
+.art-footer{
+   zoom:1;
+   background:#D6DEE6;
+}
+
+.art-footer-text
+{
+   height: 32px;
+}
+
+.art-rss-tag-icon
+{
+   zoom: 1;
+   font-size: 1px;
+}
+
+/* end Footer */
+
+/* begin LayoutCell, content */
+.art-content {
+   width: auto;
+}
+/* end LayoutCell, content */
+
+#user-login-form ul li, ul.arttabs_primary li, ul.arttabs_secondary li
+{
+   behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="");
+}
+
+.BlockContent
+{
+   width: 100% !important;
+}
